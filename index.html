@@ -17,19 +17,42 @@
     
     <div id="main-wrapper" class="grid grid-cols-5">
 
-        <nav id="main-navigation" class="col-span-1 grid grid-cols-1 content-start bg-pink-100 p-4 border-r border-pink-300">
-    <ul class="space-y-3 font-medium">
-        <li><a href="#" class="hover:text-pink-600">Home</a></li>
-        <li><a href="#" class="hover:text-pink-600">Produk</a></li>
-        <li><a href="#" class="hover:text-pink-600">Testimoni</a></li>
-        <li><a href="#" class="hover:text-pink-600">Kontak</a></li>
-    </ul>
-        </nav>
-        
-        <main id="main-content" class="col-span-3 grid grid-cols-1 content-start bg-white p-6">
-            <article class="grid grid-cols-1 gap-4">
-                </article>
-        </main>
+        <nav id="main-navigation" class="col-span-1 grid grid-cols-1 content-start bg-slate-100 p-4 border-r border-slate-300">
+            </nav>
+      
+  <main id="main-content" class="col-span-3 grid grid-cols-1 content-start bg-white p-6">
+            <article class="grid grid-cols-1 gap-6">
+
+    <!-- Produk 1 -->
+    <div class="bg-pink-50 p-4 rounded-lg shadow transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="https://via.placeholder.com/150" class="mx-auto mb-3">
+        <h3 class="text-lg font-semibold text-center">Brush Set Premium</h3>
+        <p class="text-center">Rp150.000</p>
+        <p class="text-center text-yellow-500">⭐⭐⭐⭐⭐</p>
+        <div class="text-center mt-2">
+            <button onclick="addToCart('Brush Set Premium',150000)" 
+                class="bg-pink-600 text-white px-3 py-1 rounded hover:bg-pink-700 active:scale-95 transition">
+                Tambah ke Keranjang
+            </button>
+        </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="bg-pink-50 p-4 rounded-lg shadow transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="https://via.placeholder.com/150" class="mx-auto mb-3">
+        <h3 class="text-lg font-semibold text-center">Cermin LED</h3>
+        <p class="text-center">Rp200.000</p>
+        <p class="text-center text-yellow-500">⭐⭐⭐⭐</p>
+        <div class="text-center mt-2">
+            <button onclick="addToCart('Cermin LED',200000)" 
+                class="bg-pink-600 text-white px-3 py-1 rounded hover:bg-pink-700 active:scale-95 transition">
+                Tambah ke Keranjang
+            </button>
+        </div>
+    </div>
+
+            </article>
+ </main>
 
         <aside id="right-sidebar" class="col-span-1 grid grid-cols-1 content-start bg-slate-50 p-4 border-l border-slate-300">
             </aside>
