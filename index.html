@@ -8,26 +8,102 @@
 </head>
 <body class="grid grid-rows-[auto_1fr_auto] min-h-screen m-0 p-0 font-sans">
 
-    <header id="main-header" class="grid grid-cols-1 items-center bg-slate-800 text-white p-4 h-20">
-        </header>
-
+<header id="main-header" class="grid grid-cols-1 items-center bg-pink-600 text-white p-4 h-20 text-center">
+    <div>
+        <h1 class="text-2xl font-bold">BeautyTools 💄</h1>
+        <p class="text-sm">Toko Peralatan Kosmetik Modern</p>
+    </div>
+</header>
+    
     <div id="main-wrapper" class="grid grid-cols-5">
 
         <nav id="main-navigation" class="col-span-1 grid grid-cols-1 content-start bg-slate-100 p-4 border-r border-slate-300">
             </nav>
+      
+  <main id="main-content" class="col-span-3 grid grid-cols-1 content-start bg-white p-6">
+            <article class="grid grid-cols-1 gap-6">
 
-        <main id="main-content" class="col-span-3 grid grid-cols-1 content-start bg-white p-6">
-            <article class="grid grid-cols-1 gap-4">
-                </article>
-        </main>
+    <!-- Produk 1 -->
+    <div class="bg-pink-50 p-4 rounded-lg shadow transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="https://via.placeholder.com/150" class="mx-auto mb-3">
+        <h3 class="text-lg font-semibold text-center">Brush Set Premium</h3>
+        <p class="text-center">Rp150.000</p>
+        <p class="text-center text-yellow-500">⭐⭐⭐⭐⭐</p>
+        <div class="text-center mt-2">
+            <button onclick="addToCart('Brush Set Premium',150000)" 
+                class="bg-pink-600 text-white px-3 py-1 rounded hover:bg-pink-700 active:scale-95 transition">
+                Tambah ke Keranjang
+            </button>
+        </div>
+    </div>
 
-        <aside id="right-sidebar" class="col-span-1 grid grid-cols-1 content-start bg-slate-50 p-4 border-l border-slate-300">
-            </aside>
+    <!-- Produk 2 -->
+    <div class="bg-pink-50 p-4 rounded-lg shadow transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="https://via.placeholder.com/150" class="mx-auto mb-3">
+        <h3 class="text-lg font-semibold text-center">Cermin LED</h3>
+        <p class="text-center">Rp200.000</p>
+        <p class="text-center text-yellow-500">⭐⭐⭐⭐</p>
+        <div class="text-center mt-2">
+            <button onclick="addToCart('Cermin LED',200000)" 
+                class="bg-pink-600 text-white px-3 py-1 rounded hover:bg-pink-700 active:scale-95 transition">
+                Tambah ke Keranjang
+            </button>
+        </div>
+    </div>
+
+            </article>
+ </main>
+
+        <aside id="right-sidebar" 
+    class="col-span-1 grid grid-cols-1 content-start bg-pink-50 p-4 border-l border-pink-300 space-y-6">
+
+    <!-- Search -->
+    <div>
+        <h3 class="font-semibold mb-2">Cari Produk</h3>
+        <input type="text" placeholder="Search..."
+            class="w-full border border-pink-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-pink-400">
+    </div>
+
+    <!-- Kategori -->
+    <div>
+        <h3 class="font-semibold mb-2">Kategori</h3>
+        <ul class="space-y-2 text-sm">
+            <li class="hover:text-pink-600 cursor-pointer">Brush</li>
+            <li class="hover:text-pink-600 cursor-pointer">Cermin</li>
+            <li class="hover:text-pink-600 cursor-pointer">Makeup Organizer</li>
+            <li class="hover:text-pink-600 cursor-pointer">Beauty Blender</li>
+        </ul>
+    </div>
+
+    <!-- Testimoni -->
+    <div>
+        <h3 class="font-semibold mb-2">Testimoni</h3>
+        <p class="text-sm italic">"Produknya bagus dan berkualitas!" ⭐⭐⭐⭐⭐</p>
+    </div>
+
+    <!-- Keranjang -->
+    <div class="bg-white p-3 rounded-lg shadow">
+        <h3 class="font-semibold mb-2">🛒 Keranjang</h3>
+        
+        <ul id="cart-list" class="text-sm space-y-1 max-h-32 overflow-auto"></ul>
+        
+        <p class="mt-3 font-bold text-pink-600">
+            Total: Rp <span id="total-price">0</span>
+        </p>
+
+        <button onclick="resetCart()" 
+            class="mt-2 w-full bg-pink-600 text-white py-1 rounded hover:bg-pink-700 transition">
+            Reset Keranjang
+        </button>
+    </div>
+
+        </aside>
 
     </div>
 
-    <footer id="main-footer" class="grid grid-cols-1 items-center bg-slate-900 text-white p-4 text-center h-16">
-        </footer>
+    <footer id="main-footer" class="grid grid-cols-1 items-center bg-pink-700 text-white p-4 text-center h-16">
+    <p>© 2026 BeautyTools | Project GitHub</p>
+    </footer>
 
 </body>
 </html>
